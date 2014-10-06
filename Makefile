@@ -2,9 +2,9 @@ TARGET=cv
 
 all:
 	pdflatex $(TARGET)
-#	bibtex $(TARGET)
-#	pdflatex $(TARGET)
-#	pdflatex $(TARGET)
+	bibtex $(TARGET)
+	pdflatex $(TARGET)
+	pdflatex $(TARGET)
 
 pdf:
 	pdflatex $(TARGET)
