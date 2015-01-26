@@ -5,6 +5,37 @@
 
 \usepackage[scale=0.75]{geometry}
 
+%%% citations
+\usepackage[backend=bibtex,
+  style=authoryear,
+  sorting=ydnt,
+  dashed=false,
+  maxbibnames=99]{biblatex}
+
+\renewbibmacro*{date}{}
+\renewbibmacro*{date+extrayear}{}
+\renewbibmacro*{issue+date}{}
+\newcommand*{\bibyear}{}
+
+\defbibenvironment{bibliography}
+  {\list
+    {\iffieldequals{year}{\bibyear}
+      {}
+      {\printfield{year}%
+       \savefield{year}{\bibyear}}}
+    {\setlength{\topsep}{0pt}%
+     \setlength{\labelwidth}{\hintscolumnwidth}%
+     \setlength{\labelsep}{\separatorcolumnwidth}%
+     \setlength{\itemsep}{\bibitemsep}%
+     \leftmargin\labelwidth%
+     \advance\leftmargin\labelsep}%
+     \sloppy\clubpenalty4000\widowpenalty4000}
+   {\endlist}
+   {\item}
+
+\bibliography{pubs}
+%%%
+
 \firstname{Connor}\familyname{Greenwell}
 \address{217 Stone Ave., Apt. C}{Lexington, KY 40508}
 \phone{(859)351-3405}
@@ -13,6 +44,7 @@
 \social[github]{connorgreenwell}
 
 \begin{document}
+
 \makecvtitle
 
 \section{Research Interests}
@@ -23,15 +55,15 @@
 \section{Education}
 \cventry{Spring 2016 (Exp.)}{B.S. in Computer Science, and Mathematical Science}{University of Kentucky}{Lexington, KY}{}{}
 
-\section{Research}
+\section{Experience}
 \cventry{Summer 2014}{Vialab}{University of North Carolina, Charlotte}{Charlotte, NC}{NSF - Socially Relevant Computing REU}{Worked under Dr.~Richard Souvenir exploring the geo-dependence of facial features in the GeoFaces dataset.}
 \cventry{2014 - Date}{Computer Vision Group}{University of Kentucky}{Lexington, KY}{}{Worked under Dr.~Nathan Jacobs on a variety of computer vision research projects.}
+\cventry{2013 - 2014}{Software Developer}{Happenstock.com}{Lexington, KY}{}{Developed price scraping, online purchasing and inventory control software.}
 
 \section{Publications}
 \nocite{*}
-\bibliographystyle{cvpubs}
-\subsection{Workshops}
-\bibliography{pubs}
+\printbibliography[heading=subbibliography, keyword=workshop, title={Workshops}]
+\printbibliography[heading=subbibliography, keyword=review, title={Under Review}]
 
 \section{Talks}
 \cventry{Fall 2014}{GeoFaceExplorer: Exploring the Geo-dependence of
@@ -72,8 +104,5 @@ E-Day}{}{}{ACM Table: Physics in Video Games}
 \section{Competition}
 \cventry{Fall 2012}{Team Member}{ACM Regional Programming Contest}{}{}{}
 \cventry{Spring 2012}{Team Member}{IEEE eXtreme 24h Programming Contest}{}{}{Placed in 10th Percentile Worldwide}
-
-\section{Industry}
-\cventry{2013 - 2014}{Software Developer}{Happenstock.com}{Lexington, KY}{}{Developed price scraping, online purchasing and inventory control software.}
 
 \end{document}
