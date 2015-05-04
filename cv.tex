@@ -24,7 +24,7 @@
       {\printfield{year}%
        \savefield{year}{\bibyear}}}
     {\setlength{\topsep}{0pt}%
-     \setlength{\labelwidth}{\hintscolumnwidth}%
+     \setlength{\labelwidth}{0.5\hintscolumnwidth}%
      \setlength{\labelsep}{\separatorcolumnwidth}%
      \setlength{\itemsep}{\bibitemsep}%
      \leftmargin\labelwidth%
@@ -49,8 +49,8 @@
 
 \section{Research Interests}
 \cvlistitem{Computer Vision}
-\cvlistitem{Machine Learning}
-\cvlistitem{Large Scale Data}
+\cvlistitem{Deep Learning}
+\cvlistitem{Remote Sensing}
 
 \section{Education}
 \cventry{Spring 2016 (Exp.)}{B.S. in Computer Science, and Mathematical Science}{University of Kentucky}{Lexington, KY}{3.0}{}
@@ -62,6 +62,7 @@
 
 \section{Publications}
 \nocite{*}
+\printbibliography[heading=subbibliography, keyword=conference, title={Peer-Reviewed Conferences}]
 \printbibliography[heading=subbibliography, keyword=workshop, title={Workshops}]
 \printbibliography[heading=subbibliography, keyword=review, title={Under Review}]
 
