@@ -1,16 +1,17 @@
 TARGET=cv
 
-all: spell
+all: # spell
 	pdflatex $(TARGET)
-	bibtex $(TARGET)
+#	bibtex $(TARGET)
+	biber $(TARGET)
 	pdflatex $(TARGET)
 	pdflatex $(TARGET)
 
 pdf:
 	pdflatex $(TARGET)
 
-spell:
-	aspell -ttex -c $(TARGET).tex
+# spell:
+# 	aspell -ttex -c $(TARGET).tex
 
 clean:
 	rm -f cv.pdf *.blg *.aux *.bbl *.brf *.log *.nav *.snm *.toc *.out *-blx.bib *.run.xml
