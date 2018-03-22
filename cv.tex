@@ -9,8 +9,10 @@
 \usepackage[margin=0.5in,bottom=1in]{geometry}
 
 % Bibliography
-\usepackage[citestyle=ieee,sorting=ydnt]{biblatex}
-\bibliography{./pubs.bib}
+\usepackage[
+  backend=bibtex, % uncomment if biber unavailable
+  citestyle=ieee,sorting=ydnt]{biblatex}
+\addbibresource{pubs.bib}
 
 \begin{document}
 
