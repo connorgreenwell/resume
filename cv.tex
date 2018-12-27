@@ -1,12 +1,19 @@
 \documentclass[12pt]{article}
 
+% Font
+\usepackage[T1]{fontenc}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+
 % Lists
 \usepackage{enumitem}
 \setlist[description]{noitemsep, nolistsep, leftmargin=*}
 \renewcommand\labelitemi{} % no-bullet lists
 
 % Margins
-\usepackage[margin=0.5in,bottom=1in]{geometry}
+\usepackage[
+    margin=1.0in,
+    bottom=1.5in
+]{geometry}
 
 % Bibliography
 \usepackage[
@@ -31,22 +38,23 @@ Lexington, KY 40506
 \section*{Education}
 
 \begin{description}
-    \item[Ph.D Student, Computer Science]
-        University of Kentucky, 2016--Present
-    \item[B.S., Computer Science \& Mathematics]
-        Univeristy of Kentucky, 2011--2016
+    \item[Ph.D. Student, Computer Science] 2016--Present \\
+        University of Kentucky; Lexington, KY \\
+        Advisor: Nathan Jacobs
+    \item[B.S., Computer Science \& Mathematics] 2011--2016 \\
+        University of Kentucky; Lexington, KY
 \end{description}
 
 \section*{Appointments}
 
 \begin{description}
-    \item[Research Assistant]
-        University of Kentucky, 2014--Present
-    \item[Undergraduate Research Assistant]
-        University of North Carolina, Charlotte, Summer 2014\\
-        NSF Research Experience for Undergraduates Program
-    \item[Software Developer]
-        Happenstock.com, 2013--2014
+    \item[Research Assistant] 2014--Present \\
+        University of Kentucky; Lexington, KY
+    \item[Undergraduate Research Assistant] Summer 2014 \\
+        University of North Carolina at Charlotte; Charlotte, NC \\
+        \emph{NSF Research Experience for Undergraduates Program}
+    \item[Software Developer] 2013--2014 \\
+        Happenstock.com; Lexington, KY
 \end{description}
 
 \section*{Publications}
@@ -57,13 +65,12 @@ Lexington, KY 40506
 \section*{Organizations}
 
 \begin{description}
-    \item[University of Kentucky Student Chapter, 
-        Association for Computing Machinery] 
-        2011--2015\\
+    \item[University of Kentucky Student Chapter, ACM] 
+        2011--2015 \\
         Treasurer (2012--2013), President (2013--2014), Vice President
         (2014--2015)
-    \item[Association for Computing Machinery] 2011--Present
-    \item[IEEE] 2012---Present
+    \item[ACM] 2011--Present
+    \item[IEEE] 2012--Present
 \end{description}
 
 \vspace{\fill}
