@@ -1,14 +1,15 @@
 TARGET=cv
+TEX=pdflatex
 
 all: # spell
-	pdflatex $(TARGET)
+	$(TEX) $(TARGET)
 #	biber $(TARGET)
 	bibtex $(TARGET)
-	pdflatex $(TARGET)
-	pdflatex $(TARGET)
+	$(TEX) $(TARGET)
+	$(TEX) $(TARGET)
 
 pdf:
-	pdflatex $(TARGET)
+	$(TEX) $(TARGET)
 
 # spell:
 # 	aspell -ttex -c $(TARGET).tex

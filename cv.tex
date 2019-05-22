@@ -1,8 +1,10 @@
-\documentclass[12pt]{article}
+\documentclass[12pt]{extarticle}
 
 % Font
 \usepackage[T1]{fontenc}
-\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\usepackage[utf8]{inputenc}
+\usepackage{tgheros}
+\renewcommand*\familydefault{qhv} 
 
 % Lists
 \usepackage{enumitem}
@@ -12,13 +14,14 @@
 % Margins
 \usepackage[
     margin=1.0in,
-    bottom=1.5in
+    bottom=1.25in
 ]{geometry}
 
 % Bibliography
 \usepackage[
   backend=bibtex, % uncomment if biber unavailable
   citestyle=ieee,
+  bibstyle=authortitle,
   sorting=ydnt,
   maxbibnames=99]{biblatex}
 \addbibresource{pubs.bib}
@@ -29,7 +32,8 @@
 \begin{document}
 
 \section*{\bf\huge Connor Greenwell}
-\href{mailto:(firstname)@cs.uky.edu}{(firstname)@cs.uky.edu} \\
+Email: \href{mailto:(firstname)@cs.uky.edu}{(firstname)@cs.uky.edu} \\
+Website: \href{http://connorgreenwell.com}{connorgreenwell.com} \\
 University of Kentucky\\
 Department of Computer Science\\
 Davis Marksbury Building\\
@@ -48,19 +52,32 @@ Lexington, KY 40506
 \section*{Appointments}
 
 \begin{description}
-    \item[Research Assistant] 2014--Present \\
+    \item[ASTRO Graduate Student Researcher at ORNL] Summer 2019 \\
+        National Security Emerging Technologies Division, \\
+        Oak Ridge Institute for Science and Education (ORISE); Oak Ridge, TN \\
+        \emph{Advanced Short-Term Research Opportunity (ASTRO) Program}
+    \item[Graduate Research Assistant] 2016--Present \\
         University of Kentucky; Lexington, KY
-    \item[Undergraduate Research Assistant] Summer 2014 \\
+    \item[Visiting Undergraduate Research Assistant] Summer 2014 \\
         University of North Carolina at Charlotte; Charlotte, NC \\
         \emph{NSF Research Experience for Undergraduates Program}
-    \item[Software Developer] 2013--2014 \\
-        Happenstock.com; Lexington, KY
+    \item[Undergraduate Research Assistant] 2014--2016 \\
+        University of Kentucky; Lexington, KY 
 \end{description}
 
 \section*{Publications}
 
 \nocite{*}
 \printbibliography[heading=none]
+
+\section*{Talks}
+
+\begin{description} 
+    \item[GeoFaceExplorer: Exploring the Geo-Dependence of Facial Attributes]
+        November, 2014. 
+        ACM SIGSPATAL International Workshop on Crowdsourced and Volunteered
+        Geographic Information (GEOCROWD). 
+\end{description}
 
 \section*{Organizations}
 
