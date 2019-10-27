@@ -3,8 +3,8 @@
 % Font
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{tgheros}
-\renewcommand*\familydefault{qhv} 
+%\usepackage{tgheros}
+%\renewcommand*\familydefault{qhv} 
 
 % Lists
 \usepackage{enumitem}
@@ -29,6 +29,14 @@
 % Hyperlinks
 \usepackage{hyperref}
 
+% Header / Footer
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{\small\emph{Last updated: \today}}
+\rfoot{\thepage~/~\pageref{LastPage}}
+
 \begin{document}
 
 \section*{\bf\huge Connor Greenwell}
@@ -52,17 +60,19 @@ Lexington, KY 40506
 \section*{Appointments}
 
 \begin{description}
+    \item[Graduate Research Assistant] 2016--Present \\
+        University of Kentucky; Lexington, KY
+    %\item[Junior Research Scientist] 2020--Present \\
+    %    DZYNE Technologies; Fairfax, VA
     \item[ASTRO Graduate Student Researcher at ORNL] Summer 2019 \\
         National Security Emerging Technologies Division, \\
         Oak Ridge Institute for Science and Education (ORISE); Oak Ridge, TN \\
         \emph{Advanced Short-Term Research Opportunity (ASTRO) Program}
-    \item[Graduate Research Assistant] 2016--Present \\
+    \item[Undergraduate Research Assistant] 2014--2016 \\
         University of Kentucky; Lexington, KY
     \item[Visiting Undergraduate Research Assistant] Summer 2014 \\
         University of North Carolina at Charlotte; Charlotte, NC \\
         \emph{NSF Research Experience for Undergraduates Program}
-    \item[Undergraduate Research Assistant] 2014--2016 \\
-        University of Kentucky; Lexington, KY 
 \end{description}
 
 \section*{Publications}
@@ -72,27 +82,25 @@ Lexington, KY 40506
 
 \section*{Talks}
 
-\begin{description} 
+\begin{description}
+    \item[Implicit Land Use Mapping Through Geotagged Imagery]
+        October 15-17, 2019.
+        IEEE Applied Imagery and Pattern Recognition Workshop.
     \item[GeoFaceExplorer: Exploring the Geo-Dependence of Facial Attributes]
-        November, 2014. 
+        November, 2014.
         ACM SIGSPATAL International Workshop on Crowdsourced and Volunteered
-        Geographic Information (GEOCROWD). 
+        Geographic Information (GEOCROWD).
 \end{description}
 
 \section*{Organizations}
 
 \begin{description}
-    \item[University of Kentucky Student Chapter, ACM] 
+    \item[University of Kentucky Student Chapter, ACM]
         2011--2015 \\
         Treasurer (2012--2013), President (2013--2014), Vice President
         (2014--2015)
     \item[ACM] 2011--Present
     \item[IEEE] 2012--Present
 \end{description}
-
-\vspace{\fill}
-{\centering
-    \small\emph{Last updated: \today}\par
-}
 
 \end{document}
